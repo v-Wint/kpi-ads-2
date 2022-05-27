@@ -13,7 +13,7 @@
 
 ```
 procedure Append(parentNode, childNode)
-    parentNode.push(childNode)
+    parentNode.children.push(childNode)
 
 procedure Traversal(node)
     results = []
@@ -26,8 +26,8 @@ procedure Traversal(node)
 
 procedure SwapMaxMin(rootNode)
     nodes = Traversal(rootNode)
-    min_node = nodes[0]
-    max_node = nodes[0]
+    min_node = nodes[1]
+    max_node = nodes[1]
     
     for i from 2 to length(nodes)
     do 
